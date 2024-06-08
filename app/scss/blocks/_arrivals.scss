@@ -1,0 +1,41 @@
+@import '../var';
+
+.arrivals {
+    padding: 48px 0;
+    .arrivals__inner {
+        position: relative;
+    }
+    .arrivals-slider {
+        .arrivals-slider__wrapper {
+            overflow: hidden;
+        }
+        .arrivals-slider__items {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .arrivals-slider__item {
+        }
+        .arrivals-slider__buttons {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: absolute;
+            top: 14px;
+            right: 0;
+            .arrivals-slider__btn {
+                width: 8px;
+                height: 8px;
+                background-color: #6C7275;
+                border-radius: 50%;
+                display: block;
+                &.active {
+                    background-color: var(--black-color);
+                }
+            }
+
+        }
+        
+    }
+   
+}
