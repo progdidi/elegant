@@ -21,3 +21,13 @@ searchBtn.addEventListener('click', () => {
     searchForm.classList.toggle('active');
     searchInput.classList.toggle('active');
 })
+
+
+//basket
+let products = 1;
+const basket = document.querySelector('.basket-btn__num');
+
+if(products > 0) {
+    basket.innerHTML = `${products}`;
+    basket.classList.add('active');
+}

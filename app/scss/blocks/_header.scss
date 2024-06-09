@@ -2,11 +2,13 @@
 
 .header {
     background-color: var(--yellow-color);
+    
     &__inner {
         padding: 18px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         .logo {
             font-weight: 500;
             font-family: "Poppins", sans-serif;;
@@ -44,29 +46,33 @@
             }
             .search-form {
                 display: flex;
-                .search-form__btn {
-                }
                 .search-form__input {
                     display: none;
                     width: 0;
                     height: 0;
-                    &.active {
-                        display: block;
-                        width: 70%;
-                        height: 40px;
-                        border: 1px solid var(--black-color);
-                        border-radius: 10px;
-                        background-color: transparent;
-                        margin-right: 10px;
-                        padding: 5px;
-                    }
                 }
                 &.active {
                     position: absolute;
-                    left: 10px;
-                    right: 0;
+                    left: 0;
+                    right: 52px;
                     top: 9px;
                     background-color: var(--yellow-color);
+                    border: 1px solid var(--black-color);
+                    border-radius: 10px;
+                    .search-form__btn {
+                        position: absolute;
+                        right: 10px;
+                        top: 9px;
+                    }
+                    .search-form__input.active {
+                        display: block;
+                        width: 70%;
+                        height: 40px;
+                        background-color: transparent;
+                        margin-right: 10px;
+                        padding: 5px;
+                        border: none;
+                    }
                 }
             }
             
@@ -74,6 +80,24 @@
             }
             
             .basket-btn {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                .basket-btn__num {
+                    display: none;
+                    width: 20px;
+                    height: 20px;
+                    background-color: var(--black-color);
+                    border-radius: 100%;
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-align: center;
+                    &.active {
+                        display: block;
+                    }
+                }
             }
             
         }
@@ -112,9 +136,10 @@
                         transform: translateY(0);
                         background-color: var(--yellow-color);
                         position: absolute;
-                        left: 0;
-                        right: 0;
+                        left: -10px;
+                        right: -10px;
                         top: 0;
+                        z-index: 10;
                         .menu__list-item {
                             border-bottom: 1px solid var(--black-color);
                             width: 100%;
@@ -142,7 +167,7 @@
                 position: absolute;
                 top: 18px;
                 right: 10px;
-                z-index: 2;
+                z-index: 12;
             }
         }
     }
