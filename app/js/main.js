@@ -1,4 +1,4 @@
-//hamburger menu
+//HAMBURGER MENU
 
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu__list');
@@ -8,11 +8,11 @@ menuBtn.addEventListener('click', () => {
 })
 
 
-//arrivals slider
+//ARRIVALS SLIDER
 
 
 
-//search form
+//SEARCH FORM
 const searchBtn = document.querySelector('.search-form__btn');
 const searchForm = document.querySelector('.search-form');
 const searchInput = document.querySelector('.search-form__input');
@@ -23,7 +23,7 @@ searchBtn.addEventListener('click', () => {
 })
 
 
-//basket
+//BASKET
 let products = 1;
 const basket = document.querySelector('.basket-btn__num');
 
