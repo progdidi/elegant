@@ -54,6 +54,10 @@
 
 @media (max-width: 400px) {
     .instagram {
+        .instagram__text {
+            font-size: 14px;
+            line-height: 157%;
+        }
         .instagram__gallery {
             max-width: 100%;
             grid-template-columns: repeat(1, 1fr);

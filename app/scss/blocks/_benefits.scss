@@ -29,3 +29,39 @@
     
 }
 
+@media (max-width: 1100px) {
+    .benefits {
+        .benefits__inner {
+            gap: 10px;
+            .benefits__item {
+                padding: 30px 0px 30px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .benefits {
+        .benefits__inner {
+            grid-template-columns: repeat(2, 1fr);
+            .benefits__item {
+                padding: 30px 0px 30px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .benefits {
+        .benefits__inner {
+            .benefits__item {
+                &-title {
+                    font-size: 14px;
+                    line-height: 157%;
+                }
+            }
+        }
+    }
+}
+
+
