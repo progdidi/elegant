@@ -1,0 +1,11 @@
+@import '../var';
+
+.best {
+    margin-bottom: 100px;
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 48px;
+    }
+}

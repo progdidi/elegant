@@ -1,0 +1,100 @@
+@import '../var';
+
+.promotion {
+    margin-bottom: 40px;
+    .promotion__inner {
+        display: flex;
+        .promotion__img {
+        }
+        .promotion__info {
+            padding: 101px 72px;
+            width: 100%;
+            background-color: rgba(255, 171, 0, 0.4);
+            .promotion__info-subtitle {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: var(--blue-color);
+                font-family: "Inter", sans-serif;
+                margin-bottom: 16px;
+            }
+            .promotion__info-title {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 110%;
+                letter-spacing: -0.01em;
+                color: var(--main-black-color);
+                margin-bottom: 16px;
+            }
+            .promotion__info-text {
+                font-size: 20px;
+                line-height: 160%;
+                color: var(--main-black-color);
+            }
+        
+            .promotion-timer {
+                color: var(--black-color);
+                margin-bottom: 24px;
+                .promotion-timer__text {
+                    margin-bottom: 12px;
+                    font-size: 16px;
+                    line-height: 162%;
+                    font-family: "Inter", sans-serif;
+                }
+                .promotion-timer__items {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                }
+                .promotion-timer__item {
+                    .promotion-timer__item-num {
+                        background-color: #fff;
+                        width: 60px;
+                        height: 60px;
+                        padding: 10px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 500;
+                        font-size: 34px;
+                        line-height: 112%;
+                        letter-spacing: -0.02em;
+                        color: var(--black-color);
+                        .days {
+                        }
+                        
+                        .hours {
+                        }
+                        .minutes {
+                        }
+                        .seconds {
+                        }
+                    }
+                    .promotion-timer__item-text {
+                        font-family: "Inter", sans-serif;
+                        font-size: 12px;
+                        line-height: 167%;
+                        text-align: center;
+                    }
+                }
+                
+                
+            }
+            
+            
+            .promotion__btn {
+                padding: 6px 40px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 175%;
+                letter-spacing: -0.03em;
+            }
+        }
+    }
+}
+
+
+

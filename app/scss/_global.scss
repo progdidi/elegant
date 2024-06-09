@@ -20,6 +20,12 @@ body {
     margin: 0 auto;
 }
 
+.container-fluid {
+    max-width: 1520px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .main-btn {
     background-color: var(--black-color);
     color: #FFFFFF;
