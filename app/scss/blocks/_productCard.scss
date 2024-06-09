@@ -3,7 +3,7 @@
 .product-card {
     font-family: "Inter", sans-serif;
     color: var(--black-color);
-    width: 262px;
+    width: minmax(210px, 262px);
     transition: all 0.3s;
     .product-card__main {
         padding: 16px;
@@ -35,13 +35,10 @@
             top: 16px;
             right: 16px;
         }
-        .product-card__like-img {
-        }
-        .product-card__img {
-        }
         .product-card__btn {
-            padding: 8px 24px;
+            padding: 8px 0px;
             width: 100%;
+            text-align: center;
         }
     }
     
