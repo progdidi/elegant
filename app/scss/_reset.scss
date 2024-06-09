@@ -63,3 +63,7 @@ button{
   background-color: transparent;
   border: none;
 }
+
+input:focus {
+  outline: none;
+}

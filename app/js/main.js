@@ -10,3 +10,14 @@ menuBtn.addEventListener('click', () => {
 
 //arrivals slider
 
+
+
+//search form
+const searchBtn = document.querySelector('.search-form__btn');
+const searchForm = document.querySelector('.search-form');
+const searchInput = document.querySelector('.search-form__input');
+
+searchBtn.addEventListener('click', () => {
+    searchForm.classList.toggle('active');
+    searchInput.classList.toggle('active');
+})
