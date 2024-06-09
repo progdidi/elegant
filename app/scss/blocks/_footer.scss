@@ -18,8 +18,15 @@
                 color: #6C7275;
             }
             .footer-top__logo {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 100%;
             }
             .footer-top__text {
+                font-size: 14px;
+                line-height: 157%;
+                color: #E8ECEF;
+                font-family: "Inter", sans-serif;
             }
         }
         
@@ -30,10 +37,13 @@
             display: flex;
             align-items: center;
             gap: 40px;
-        }
-        .footer-top__list-item {
+            
         }
         .footer-top__list-link {
+            color: #FEFEFE;
+            font-size: 14px;
+            line-height: 157%;
+            font-family: "Inter", sans-serif;
         }
     }
     
@@ -44,8 +54,12 @@
         padding-top: 16px;
         padding-bottom: 20px;
         .footer-bottom__text {
+            text-align: center;
         }
-        .footer-bottom__link {
+        .footer-bottom__links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
         }
         .social__list {
             display: flex;
@@ -53,12 +67,46 @@
             margin-left: auto;
             gap: 24px;
         }
-        .social__list-item {
-        }
-        .social__list-link {
-        }
-        .social__list-img {
-        }
     }
     
+}
+
+@media (max-width: 900px) {
+    .footer {
+        .footer-top {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .footer-top__menu {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .social__list {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        padding-top: 50px;
+        .footer-top {
+            .footer-top__title {
+                gap: 15px;
+            }
+            .footer-top__list {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
 }
