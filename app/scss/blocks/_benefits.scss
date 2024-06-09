@@ -1,0 +1,31 @@
+@import '../var';
+
+.benefits {
+    padding-bottom: 40px;
+    .benefits__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        .benefits__item {
+            padding: 48px 32px;
+            background-color: #F3F5F7;
+            &-img {
+                margin-bottom: 16px;
+            }
+            &-title {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 140%;
+                color: var(--black-color);
+                margin-bottom: 8px;
+            }
+            &-descr {
+                font-size: 14px;
+                line-height: 171%;
+                color: #6C7275;
+            }
+        }
+    }
+    
+}
+
