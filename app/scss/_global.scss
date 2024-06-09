@@ -42,3 +42,11 @@ body {
     letter-spacing: -0.01em;
     margin-bottom: 48px;
 }
+
+@media (max-width: 600px) {
+    .section__title {
+        font-size: 34px;
+        line-height: 112%;
+
+    }
+}
