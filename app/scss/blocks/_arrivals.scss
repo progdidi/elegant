@@ -15,6 +15,7 @@
             gap: 24px;
         }
         .arrivals-slider__item {
+            min-width: 260px;
         }
         .arrivals-slider__buttons {
             display: flex;
@@ -39,3 +40,14 @@
     }
    
 }
+
+@media (max-width: 1100px) {
+    .arrivals {
+        .arrivals-slider {
+            .arrivals-slider__item {
+                min-width: 220px;
+            }
+        }
+    }
+}
+

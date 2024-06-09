@@ -29,14 +29,3 @@
     }
 }
 
-@media (max-width: 700px) {
-    .brands {
-        &__inner {
-            flex-wrap: wrap;
-            gap: 5px;
-            img {
-                width: 60%;
-            }
-        }
-    }
-}
